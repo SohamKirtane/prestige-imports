@@ -1,0 +1,142 @@
+html, body {
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+    font-family: "Calibri";
+}
+
+*::selection {
+    background-color: gold;
+    color: black;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+}
+
+header {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+}
+
+header .logo {
+    float: left;
+    width: 50%;
+}
+
+header .logo img {
+    width: 200px;
+    height: 80px;
+}
+
+header nav {
+    width: 50%;
+    float: right;
+}
+
+header nav ul {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    display: inline;
+    padding: 30px 25px 31px 25px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+header li:hover {
+    background-color: gold;
+    color: black;
+    text-decoration: underline;
+}
+
+.career-container {
+    padding: 120px 30px 40px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.career-info {
+    flex: 1;
+    min-width: 300px;
+    background-color: lightgray;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.career-info h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.career-form {
+    flex: 1;
+    min-width: 300px;
+    background-color: lightgray;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.career-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.career-form label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.career-form input,
+.career-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.career-form button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.career-form button:hover {
+    background-color: gold;
+    color: black;
+}
+
+.clearfix {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
